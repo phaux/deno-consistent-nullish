@@ -16,5 +16,8 @@
     "rules": {
       "include": ["no-console"]
     }
+  },
+  "tasks": {
+    "snapshot": "deno test -RW=. -- -u"
   }
 }
