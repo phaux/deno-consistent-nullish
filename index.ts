@@ -4,7 +4,7 @@ import { noInOperatorRule } from "./rules/no-in-operator.ts";
 import { noUnsafeSpreadRule } from "./rules/no-unsafe-spread.ts";
 import { optPropUndefRule } from "./rules/opt-prop-undef.ts";
 
-const nullishPlugin = {
+const nullishPlugin: Deno.lint.Plugin = {
   name: "prosto-nullish",
   rules: {
     "eq-nullish-loose": eqNullishLooseRule,
@@ -13,6 +13,6 @@ const nullishPlugin = {
     "no-unsafe-spread": noUnsafeSpreadRule,
     "opt-prop-undef": optPropUndefRule,
   },
-} satisfies Deno.lint.Plugin;
+};
 
 export default nullishPlugin;
