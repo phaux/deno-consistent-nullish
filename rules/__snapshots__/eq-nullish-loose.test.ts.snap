@@ -1,0 +1,114 @@
+export const snapshot = {};
+
+snapshot[`bans strict comparison to null or undefined 1`] = `
+[
+  {
+    fix: [
+      {
+        range: [
+          7,
+          10,
+        ],
+        text: "==",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`value == null\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with null is not allowed.",
+    range: [
+      7,
+      10,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          23,
+          26,
+        ],
+        text: "==",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`value == undefined\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with undefined is not allowed.",
+    range: [
+      23,
+      26,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          84,
+          87,
+        ],
+        text: "==",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`value == null\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with null is not allowed.",
+    range: [
+      84,
+      87,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          105,
+          108,
+        ],
+        text: "==",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`value == undefined\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with undefined is not allowed.",
+    range: [
+      105,
+      108,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          158,
+          161,
+        ],
+        text: "==",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`value == undefined\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with undefined is not allowed.",
+    range: [
+      158,
+      161,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          206,
+          209,
+        ],
+        text: "==",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`value == null\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with null is not allowed.",
+    range: [
+      206,
+      209,
+    ],
+  },
+]
+`;

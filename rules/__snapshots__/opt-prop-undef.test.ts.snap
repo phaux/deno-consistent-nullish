@@ -1,0 +1,67 @@
+export const snapshot = {};
+
+snapshot[`requires optional properties to include undefined 1`] = `
+[
+  {
+    fix: [
+      {
+        range: [
+          27,
+          27,
+        ],
+        text: " | undefined",
+      },
+    ],
+    hint: "TypeScript differentiates missing properties from \`undefined\` when \`exactOptionalPropertyTypes\` option is enabled. Please use \`T | undefined\` to represent optional properties.",
+    id: "test/rule",
+    message: "Type of optional property must include undefined.",
+    range: [
+      17,
+      18,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          68,
+          68,
+        ],
+        text: " | undefined",
+      },
+    ],
+    hint: "TypeScript differentiates missing properties from \`undefined\` when \`exactOptionalPropertyTypes\` option is enabled. Please use \`T | undefined\` to represent optional properties.",
+    id: "test/rule",
+    message: "Type of optional property must include undefined.",
+    range: [
+      49,
+      50,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          89,
+          89,
+        ],
+        text: "(",
+      },
+      {
+        range: [
+          104,
+          104,
+        ],
+        text: ") | undefined",
+      },
+    ],
+    hint: "TypeScript differentiates missing properties from \`undefined\` when \`exactOptionalPropertyTypes\` option is enabled. Please use \`T | undefined\` to represent optional properties.",
+    id: "test/rule",
+    message: "Type of optional property must include undefined.",
+    range: [
+      85,
+      86,
+    ],
+  },
+]
+`;

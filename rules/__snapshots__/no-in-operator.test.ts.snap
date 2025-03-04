@@ -1,0 +1,181 @@
+export const snapshot = {};
+
+snapshot[`bans in operator 1`] = `
+[
+  {
+    fix: [
+      {
+        range: [
+          9,
+          14,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          17,
+          17,
+        ],
+        text: "[x] != null",
+      },
+    ],
+    hint: "\`in\` operator differentiates between lack of property and a property with nullish value. Use \`obj[x] != null\` to check for both missing and nullish properties.",
+    id: "test/rule",
+    message: "\`in\` operator is not allowed.",
+    range: [
+      11,
+      13,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          30,
+          39,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          42,
+          42,
+        ],
+        text: ".foo != null",
+      },
+    ],
+    hint: "\`in\` operator differentiates between lack of property and a property with nullish value. Use \`obj.foo != null\` to check for both missing and nullish properties.",
+    id: "test/rule",
+    message: "\`in\` operator is not allowed.",
+    range: [
+      36,
+      38,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          57,
+          66,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          69,
+          69,
+        ],
+        text: ".foo != null",
+      },
+    ],
+    hint: "\`in\` operator differentiates between lack of property and a property with nullish value. Use \`obj.foo != null\` to check for both missing and nullish properties.",
+    id: "test/rule",
+    message: "\`in\` operator is not allowed.",
+    range: [
+      63,
+      65,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          83,
+          96,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          103,
+          103,
+        ],
+        text: '["a" + "b"] != null',
+      },
+    ],
+    hint: '\`in\` operator differentiates between lack of property and a property with nullish value. Use \`obj["a" + "b"] != null\` to check for both missing and nullish properties.',
+    id: "test/rule",
+    message: "\`in\` operator is not allowed.",
+    range: [
+      93,
+      95,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          116,
+          125,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          133,
+          133,
+        ],
+        text: ".foo != null",
+      },
+    ],
+    hint: "\`in\` operator differentiates between lack of property and a property with nullish value. Use \`obj.foo != null\` to check for both missing and nullish properties.",
+    id: "test/rule",
+    message: "\`in\` operator is not allowed.",
+    range: [
+      122,
+      124,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          146,
+          151,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          154,
+          154,
+        ],
+        text: "[1] != null",
+      },
+    ],
+    hint: "\`in\` operator differentiates between lack of property and a property with nullish value. Use \`obj[1] != null\` to check for both missing and nullish properties.",
+    id: "test/rule",
+    message: "\`in\` operator is not allowed.",
+    range: [
+      148,
+      150,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          167,
+          172,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          174,
+          174,
+        ],
+        text: "[x] != null",
+      },
+    ],
+    hint: "\`in\` operator differentiates between lack of property and a property with nullish value. Use \`obj[x] != null\` to check for both missing and nullish properties.",
+    id: "test/rule",
+    message: "\`in\` operator is not allowed.",
+    range: [
+      169,
+      171,
+    ],
+  },
+]
+`;

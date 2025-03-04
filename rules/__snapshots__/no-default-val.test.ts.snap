@@ -1,0 +1,146 @@
+export const snapshot = {};
+
+snapshot[`bans default parameters 1`] = `
+[
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      20,
+      21,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      47,
+      48,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      54,
+      55,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      94,
+      95,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      129,
+      130,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      163,
+      164,
+    ],
+  },
+]
+`;
+
+snapshot[`bans default object properties 1`] = `
+[
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      107,
+      108,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      137,
+      138,
+    ],
+  },
+]
+`;
+
+snapshot[`bans default array elements 1`] = `
+[
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      21,
+      22,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      50,
+      51,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      57,
+      58,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      99,
+      100,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    id: "test/rule",
+    message: "Default parameters are not allowed.",
+    range: [
+      124,
+      125,
+    ],
+  },
+]
+`;
