@@ -5,7 +5,7 @@ import { noUnsafeSpreadRule } from "./rules/no-unsafe-spread.ts";
 import { optPropUndefRule } from "./rules/opt-prop-undef.ts";
 
 const nullishPlugin = {
-  name: "nullish",
+  name: "prosto-nullish",
   rules: {
     "eq-nullish-loose": eqNullishLooseRule,
     "no-default-val": noDefaultValRule,

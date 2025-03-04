@@ -12,15 +12,15 @@ export const eqNullishLooseRule: Deno.lint.Rule = {
       const nullishText = ctx.sourceCode.getText(nullishNode);
       ctx.report({
         range: getOperatorRange(ctx.sourceCode, exprNode),
-        message: `Strict equality comparison with ${nullishText} is not allowed.`,
-        hint:
-          `Differentiating between null and undefined is forbidden. ` +
+        message:
+          `Strict equality comparison with ${nullishText} is not allowed.`,
+        hint: `Differentiating between null and undefined is forbidden. ` +
           `Use \`value ${opMap[op]} ${nullishText}\` ` +
           `to check for any nullish value.`,
         fix(fixer) {
           return fixer.replaceTextRange(
             getOperatorRange(ctx.sourceCode, exprNode),
-            opMap[op]
+            opMap[op],
           );
         },
       });

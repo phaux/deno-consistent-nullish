@@ -15,7 +15,7 @@ export const noUnsafeSpreadRule: Deno.lint.Rule = {
           message: "Object spread is only allowed as the first element.",
           hint:
             "Object spread is broken in TypeScript without `exactOptionalPropertyTypes` mode. " +
-            "Please assign each property explicitly.",
+            "You should assign each property explicitly.",
         });
       }
     },

@@ -4,7 +4,7 @@ snapshot[`bans spread in objects 1`] = `
 [
   {
     fix: [],
-    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. Please assign each property explicitly.",
+    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. You should assign each property explicitly.",
     id: "test/rule",
     message: "Object spread is only allowed as the first element.",
     range: [
@@ -14,7 +14,7 @@ snapshot[`bans spread in objects 1`] = `
   },
   {
     fix: [],
-    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. Please assign each property explicitly.",
+    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. You should assign each property explicitly.",
     id: "test/rule",
     message: "Object spread is only allowed as the first element.",
     range: [
@@ -24,7 +24,7 @@ snapshot[`bans spread in objects 1`] = `
   },
   {
     fix: [],
-    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. Please assign each property explicitly.",
+    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. You should assign each property explicitly.",
     id: "test/rule",
     message: "Object spread is only allowed as the first element.",
     range: [
@@ -34,7 +34,7 @@ snapshot[`bans spread in objects 1`] = `
   },
   {
     fix: [],
-    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. Please assign each property explicitly.",
+    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. You should assign each property explicitly.",
     id: "test/rule",
     message: "Object spread is only allowed as the first element.",
     range: [
@@ -44,7 +44,7 @@ snapshot[`bans spread in objects 1`] = `
   },
   {
     fix: [],
-    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. Please assign each property explicitly.",
+    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. You should assign each property explicitly.",
     id: "test/rule",
     message: "Object spread is only allowed as the first element.",
     range: [
@@ -54,7 +54,7 @@ snapshot[`bans spread in objects 1`] = `
   },
   {
     fix: [],
-    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. Please assign each property explicitly.",
+    hint: "Object spread is broken in TypeScript without \`exactOptionalPropertyTypes\` mode. You should assign each property explicitly.",
     id: "test/rule",
     message: "Object spread is only allowed as the first element.",
     range: [

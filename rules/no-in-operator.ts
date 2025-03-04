@@ -18,7 +18,7 @@ export const noInOperatorRule: Deno.lint.Rule = {
         range: getOperatorRange(ctx.sourceCode, exprNode),
         message: "`in` operator is not allowed.",
         hint:
-          "`in` operator differentiates between lack of property and a property with nullish value. " +
+          "`in` operator differentiates between missing property and a property with nullish value. " +
           `Use \`obj${newPropText} != null\` to check for both missing and nullish properties.`,
         *fix(fixer) {
           // Remove left operand and `in` operator.
@@ -29,7 +29,7 @@ export const noInOperatorRule: Deno.lint.Rule = {
           // Add property access.
           yield fixer.insertTextAfterRange(
             exprNode.right.range,
-            `${newPropText} != null`
+            `${newPropText} != null`,
           );
         },
       });

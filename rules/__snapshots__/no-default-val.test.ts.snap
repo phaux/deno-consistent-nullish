@@ -4,9 +4,9 @@ snapshot[`bans default parameters 1`] = `
 [
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       20,
       21,
@@ -14,9 +14,9 @@ snapshot[`bans default parameters 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       47,
       48,
@@ -24,9 +24,9 @@ snapshot[`bans default parameters 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       54,
       55,
@@ -34,9 +34,9 @@ snapshot[`bans default parameters 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       94,
       95,
@@ -44,9 +44,9 @@ snapshot[`bans default parameters 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       129,
       130,
@@ -54,9 +54,9 @@ snapshot[`bans default parameters 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       163,
       164,
@@ -69,9 +69,9 @@ snapshot[`bans default object properties 1`] = `
 [
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       107,
       108,
@@ -79,9 +79,9 @@ snapshot[`bans default object properties 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       137,
       138,
@@ -94,9 +94,9 @@ snapshot[`bans default array elements 1`] = `
 [
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       21,
       22,
@@ -104,9 +104,9 @@ snapshot[`bans default array elements 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       50,
       51,
@@ -114,9 +114,9 @@ snapshot[`bans default array elements 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       57,
       58,
@@ -124,9 +124,9 @@ snapshot[`bans default array elements 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       99,
       100,
@@ -134,9 +134,9 @@ snapshot[`bans default array elements 1`] = `
   },
   {
     fix: [],
-    hint: "Default value is only applied when undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value for both null and undefined.",
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
     id: "test/rule",
-    message: "Default parameters are not allowed.",
+    message: "Default values are not allowed.",
     range: [
       124,
       125,

@@ -12,7 +12,7 @@ snapshot[`requires optional properties to include undefined 1`] = `
         text: " | undefined",
       },
     ],
-    hint: "TypeScript differentiates missing properties from \`undefined\` when \`exactOptionalPropertyTypes\` option is enabled. Please use \`T | undefined\` to represent optional properties.",
+    hint: "TypeScript differentiates missing properties from undefined when \`exactOptionalPropertyTypes\` option is enabled. Use \`T | undefined\` to represent optional properties.",
     id: "test/rule",
     message: "Type of optional property must include undefined.",
     range: [
@@ -30,7 +30,7 @@ snapshot[`requires optional properties to include undefined 1`] = `
         text: " | undefined",
       },
     ],
-    hint: "TypeScript differentiates missing properties from \`undefined\` when \`exactOptionalPropertyTypes\` option is enabled. Please use \`T | undefined\` to represent optional properties.",
+    hint: "TypeScript differentiates missing properties from undefined when \`exactOptionalPropertyTypes\` option is enabled. Use \`T | undefined\` to represent optional properties.",
     id: "test/rule",
     message: "Type of optional property must include undefined.",
     range: [
@@ -55,7 +55,7 @@ snapshot[`requires optional properties to include undefined 1`] = `
         text: ") | undefined",
       },
     ],
-    hint: "TypeScript differentiates missing properties from \`undefined\` when \`exactOptionalPropertyTypes\` option is enabled. Please use \`T | undefined\` to represent optional properties.",
+    hint: "TypeScript differentiates missing properties from undefined when \`exactOptionalPropertyTypes\` option is enabled. Use \`T | undefined\` to represent optional properties.",
     id: "test/rule",
     message: "Type of optional property must include undefined.",
     range: [

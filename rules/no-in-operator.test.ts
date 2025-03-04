@@ -14,7 +14,7 @@ Deno.test("bans in operator", async (t) => {
     if ("foo" in getObj()) {}
     if (1 in obj) {}
     if (x in {}) {}
-    `
+    `,
   );
   assertEquals(diagnostics.length, 7);
   await assertSnapshot(t, diagnostics);

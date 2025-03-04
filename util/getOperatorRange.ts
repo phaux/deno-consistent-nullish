@@ -5,7 +5,7 @@ import { trimRange } from "./trimRange.ts";
  */
 export function getOperatorRange(
   sourceCode: Deno.lint.SourceCode,
-  node: Deno.lint.BinaryExpression
+  node: Deno.lint.BinaryExpression,
 ): Deno.lint.Range {
   return trimRange(sourceCode, [node.left.range[1], node.right.range[0]]);
 }

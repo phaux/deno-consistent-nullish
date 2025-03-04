@@ -8,10 +8,10 @@ export const noDefaultValRule: Deno.lint.Rule = {
           node.left.range[1],
           node.right.range[0],
         ]),
-        message: "Default parameters are not allowed.",
+        message: "Default values are not allowed.",
         hint:
-          "Default value is only applied when undefined but not null. " +
-          "Use nullish coalescing operator (`??`) to apply default value for both null and undefined.",
+          "Default value is only applied when the original is undefined but not null. " +
+          "Use nullish coalescing operator (`??`) to apply default value.",
       });
     },
   }),
