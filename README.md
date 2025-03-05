@@ -1,5 +1,7 @@
 # Simple Nullish Deno Lint Plugin
 
+[![JSR](https://jsr.io/badges/@prosto/nullish)](https://jsr.io/@prosto/nullish)
+
 Enforces treating null and undefined values the same way. This plugin bans code
 which relies on the distinction between null, undefined or a missing property.
 
