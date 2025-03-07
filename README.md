@@ -142,9 +142,12 @@ interface Test {
 }
 ```
 
-## TODOs
+## Rule `sort-nullish-type` (autofixable)
 
-- [ ] add rule `consistent-nullish-type` - always require `null | undefined`
-      type - never just one or the other.
-- [ ] add rule `opt-param-undef` - require optional function parameters to
-      include `undefined` in their type.
+Helps maintain a consistent order of nullish types in unions.
+
+This rule ensures that `null` and `undefined` are placed at the end of a union type:
+
+```ts
+type T = string | number | null | undefined;
+```

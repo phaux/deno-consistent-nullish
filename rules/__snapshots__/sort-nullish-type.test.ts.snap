@@ -1,0 +1,181 @@
+export const snapshot = {};
+
+snapshot[`bans wrong order of types 1`] = `
+[
+  {
+    fix: [
+      {
+        range: [
+          22,
+          26,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          35,
+          35,
+        ],
+        text: " | null",
+      },
+    ],
+    hint: "For consistency, place \`null\` at the end of the union.",
+    id: "test/rule",
+    message: "Expected \`null\` to be after \`string\`",
+    range: [
+      22,
+      26,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          58,
+          67,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          76,
+          76,
+        ],
+        text: " | undefined",
+      },
+    ],
+    hint: "For consistency, place \`undefined\` at the end of the union.",
+    id: "test/rule",
+    message: "Expected \`undefined\` to be after \`number\`",
+    range: [
+      58,
+      67,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          132,
+          141,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          148,
+          148,
+        ],
+        text: " | undefined",
+      },
+    ],
+    hint: "For consistency, place \`null | undefined\` at the end of the union.",
+    id: "test/rule",
+    message: "Expected \`undefined\` to be after \`null\`",
+    range: [
+      132,
+      141,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          110,
+          122,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          129,
+          129,
+        ],
+        text: " | undefined",
+      },
+    ],
+    hint: "For consistency, place \`null | undefined\` at the end of the union.",
+    id: "test/rule",
+    message: "Expected \`undefined\` to be after \`null\`",
+    range: [
+      113,
+      122,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          164,
+          171,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          178,
+          178,
+        ],
+        text: " | null",
+      },
+    ],
+    hint: "For consistency, place \`null | undefined\` at the end of the union.",
+    id: "test/rule",
+    message: "Expected \`null\` to be after \`void\`",
+    range: [
+      167,
+      171,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          206,
+          218,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          232,
+          232,
+        ],
+        text: " | undefined",
+      },
+    ],
+    hint: "For consistency, place \`null | undefined\` at the end of the union.",
+    id: "test/rule",
+    message: "Expected \`undefined\` to be after \`void\`",
+    range: [
+      209,
+      218,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          218,
+          225,
+        ],
+        text: "",
+      },
+      {
+        range: [
+          232,
+          232,
+        ],
+        text: " | null",
+      },
+    ],
+    hint: "For consistency, place \`null | undefined\` at the end of the union.",
+    id: "test/rule",
+    message: "Expected \`null\` to be after \`void\`",
+    range: [
+      221,
+      225,
+    ],
+  },
+]
+`;
