@@ -30,9 +30,7 @@ export const sortNullishType: Deno.lint.Rule = {
         ctx.report({
           node: node,
           message: `Expected ${fc(nodeText)} to be after ${fc(targetNodeText)}`,
-          hint: `For consistency, place ${
-            fc(sortedTypes)
-          } at the end of the union.`,
+          hint: `For consistency, place ${fc(sortedTypes)} at the end of the union.`,
           *fix(fixer) {
             // Start from the end of previous member or start of the union if first member.
             const start = index === 0 ? unionNode.range[0] : getRangeWithParens(

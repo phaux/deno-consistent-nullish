@@ -2,8 +2,8 @@
 
 [![JSR](https://jsr.io/badges/@prosto/nullish)](https://jsr.io/@prosto/nullish)
 
-Enforces treating null and undefined values the same way. This plugin bans code
-which relies on the distinction between null, undefined or a missing property.
+Enforces treating null and undefined values the same way. This plugin bans code which relies on the
+distinction between null, undefined or a missing property.
 
 > [!NOTE]
 > "prosto" means "simply" in slavic languages.
@@ -22,11 +22,9 @@ which relies on the distinction between null, undefined or a missing property.
 
 ## Rule `no-default-val`
 
-Default values are only applied when original value is undefined or missing but
-not null.
+Default values are only applied when original value is undefined or missing but not null.
 
-This rule bans default values in object/array destructuring and function
-parameters:
+This rule bans default values in object/array destructuring and function parameters:
 
 ```ts
 const { foo = "" } = {};
@@ -40,8 +38,7 @@ function fn(opts = {}) {
 }
 ```
 
-Use nullish coalescing operator (`??`) to apply default value for both null and
-undefined:
+Use nullish coalescing operator (`??`) to apply default value for both null and undefined:
 
 ```ts
 const { foo } = {};
@@ -57,8 +54,7 @@ function fn(opts) {
 
 ## Rule `no-in-operator` (autofixable)
 
-`in` operator differentiates between lack of property and a property with
-nullish value.
+`in` operator differentiates between lack of property and a property with nullish value.
 
 This rule bans usage of `in` operator:
 
@@ -74,11 +70,10 @@ if (obj.prop != null) console.log("obj has prop and it's not nullish");
 
 ## Rule `no-unsafe-spread`
 
-[Object spread is broken] in TypeScript without `exactOptionalPropertyTypes` TS
-option. In addition, it treats missing properties differently from nullish.
+[Object spread is broken] in TypeScript without `exactOptionalPropertyTypes` TS option. In addition,
+it treats missing properties differently from nullish.
 
-This rule bans spread in object when it's not the first element of the object
-literal:
+This rule bans spread in object when it's not the first element of the object literal:
 
 ```ts
 const opts = {
@@ -101,8 +96,7 @@ const opts = {
 
 ## Rule `eq-nullish-loose` (autofixable)
 
-This rule bans usage of `===` and `!==` operators to compare null or undefined
-values:
+This rule bans usage of `===` and `!==` operators to compare null or undefined values:
 
 ```ts
 if (foo === null) console.log("foo is null");
@@ -120,9 +114,9 @@ if (baz == undefined) console.log("baz is nullish");
 
 ## Rule `opt-prop-undef` (autofixable)
 
-TypeScript differentiates missing properties from undefined when
-`exactOptionalPropertyTypes` option is enabled. This makes it nontrivial to
-create objects with optional properties, when they can't be nullish.
+TypeScript differentiates missing properties from undefined when `exactOptionalPropertyTypes` option
+is enabled. This makes it nontrivial to create objects with optional properties, when they can't be
+nullish.
 
 This rule bans optional properties without `undefined` in their type:
 

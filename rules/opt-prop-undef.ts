@@ -1,3 +1,7 @@
+import { getRangeWithParens } from "../util/getRangeWithParens.ts";
+import { isParenthesized } from "../util/isParenthesized.ts";
+import { fc } from "../util/formatCode.ts";
+
 export const optPropUndefRule: Deno.lint.Rule = {
   create(ctx) {
     return {
@@ -17,24 +21,31 @@ export const optPropUndefRule: Deno.lint.Rule = {
         )
       ) {
         const typeAnnotation = propNode.typeAnnotation.typeAnnotation;
+        const keyName = ctx.sourceCode.getText(propNode.key);
         return ctx.report({
           node: propNode.key,
-          message: "Type of optional property must include undefined.",
+          message: `Type of optional property ${fc(keyName)} must include undefined.`,
           hint:
             "TypeScript differentiates missing properties from undefined when `exactOptionalPropertyTypes` option is enabled. " +
-            "Use `T | undefined` to represent optional properties.",
+            `Include ${fc("undefined")} in the type to represent optional properties.`,
           *fix(fixer) {
             if (
-              typeAnnotation.type === "TSTypeReference" ||
+              isParenthesized(ctx.sourceCode, typeAnnotation) ||
               typeAnnotation.type.endsWith("Keyword") ||
-              (typeAnnotation.type === "TSUnionType" &&
-                typeAnnotation.types.every(
-                  (t) =>
-                    t.type === "TSTypeReference" || t.type.endsWith("Keyword"),
-                ))
+              typeAnnotation.type === "TSLiteralType" ||
+              typeAnnotation.type === "TSTemplateLiteralType" ||
+              typeAnnotation.type === "TSTypeReference" ||
+              typeAnnotation.type === "TSIndexedAccessType" ||
+              typeAnnotation.type === "TSArrayType" ||
+              typeAnnotation.type === "TSTypeLiteral" ||
+              typeAnnotation.type === "TSTupleType" ||
+              typeAnnotation.type === "TSUnionType"
             ) {
-              // Type annotation is a simple type or a union of simple types.
-              yield fixer.insertTextAfter(typeAnnotation, " | undefined");
+              // Type annotation is a simple type.
+              yield fixer.insertTextAfterRange(
+                getRangeWithParens(ctx.sourceCode, typeAnnotation),
+                " | undefined",
+              );
             } else {
               // Type annotation is a complex type.
               // Wrap the complex type in parentheses to make sure precedence is correct.

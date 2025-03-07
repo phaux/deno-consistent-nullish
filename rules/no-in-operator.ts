@@ -1,3 +1,4 @@
+import { fc } from "../util/formatCode.ts";
 import { getOperatorRange } from "../util/getOperatorRange.ts";
 
 export const noInOperatorRule: Deno.lint.Rule = {
@@ -19,7 +20,7 @@ export const noInOperatorRule: Deno.lint.Rule = {
         message: "`in` operator is not allowed.",
         hint:
           "`in` operator differentiates between missing property and a property with nullish value. " +
-          `Use \`obj${newPropText} != null\` to check for both missing and nullish properties.`,
+          `Use ${fc(`obj${newPropText} != null`)} to check for missing or nullish property.`,
         *fix(fixer) {
           // Remove left operand and `in` operator.
           yield fixer.removeRange([
