@@ -42,6 +42,42 @@ snapshot[`bans strict comparison to null or undefined 1`] = `
     fix: [
       {
         range: [
+          44,
+          47,
+        ],
+        text: "!=",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`!=\` with \`null\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with \`null\` is not allowed.",
+    range: [
+      44,
+      47,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          60,
+          63,
+        ],
+        text: "!=",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`!=\` with \`undefined\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with \`undefined\` is not allowed.",
+    range: [
+      60,
+      63,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
           84,
           87,
         ],
@@ -78,6 +114,42 @@ snapshot[`bans strict comparison to null or undefined 1`] = `
     fix: [
       {
         range: [
+          121,
+          124,
+        ],
+        text: "!=",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`!=\` with \`null\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with \`null\` is not allowed.",
+    range: [
+      121,
+      124,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          142,
+          145,
+        ],
+        text: "!=",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`!=\` with \`undefined\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with \`undefined\` is not allowed.",
+    range: [
+      142,
+      145,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
           158,
           161,
         ],
@@ -96,6 +168,24 @@ snapshot[`bans strict comparison to null or undefined 1`] = `
     fix: [
       {
         range: [
+          187,
+          190,
+        ],
+        text: "!=",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`!=\` with \`null\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with \`null\` is not allowed.",
+    range: [
+      187,
+      190,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
           206,
           209,
         ],
@@ -108,6 +198,24 @@ snapshot[`bans strict comparison to null or undefined 1`] = `
     range: [
       206,
       209,
+    ],
+  },
+  {
+    fix: [
+      {
+        range: [
+          230,
+          233,
+        ],
+        text: "!=",
+      },
+    ],
+    hint: "Differentiating between null and undefined is forbidden. Use \`!=\` with \`undefined\` to check for any nullish value.",
+    id: "test/rule",
+    message: "Strict equality comparison with \`undefined\` is not allowed.",
+    range: [
+      230,
+      233,
     ],
   },
 ]

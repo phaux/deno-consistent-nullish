@@ -34,7 +34,7 @@ Deno.test("bans default object properties", async (t) => {
     const { a: b = {} } = {};
     `,
   );
-  assertEquals(diagnostics.length, 2); // BUG: Deno parses `{ a = b }` as `{ a: b }`
+  assertEquals(diagnostics.length, 5);
   await assertSnapshot(t, diagnostics);
 });
 

@@ -21,6 +21,6 @@ Deno.test("bans strict comparison to null or undefined", async (t) => {
     undefined !== undefined;
     `,
   );
-  assertEquals(diagnostics.length, 6); // BUG: Deno parses `!==` as `!=`
+  assertEquals(diagnostics.length, 12);
   await assertSnapshot(t, diagnostics);
 });

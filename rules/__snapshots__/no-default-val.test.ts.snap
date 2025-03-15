@@ -73,6 +73,36 @@ snapshot[`bans default object properties 1`] = `
     id: "test/rule",
     message: "Default values are not allowed.",
     range: [
+      22,
+      23,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
+    id: "test/rule",
+    message: "Default values are not allowed.",
+    range: [
+      53,
+      54,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
+    id: "test/rule",
+    message: "Default values are not allowed.",
+    range: [
+      60,
+      61,
+    ],
+  },
+  {
+    fix: [],
+    hint: "Default value is only applied when the original is undefined but not null. Use nullish coalescing operator (\`??\`) to apply default value.",
+    id: "test/rule",
+    message: "Default values are not allowed.",
+    range: [
       107,
       108,
     ],
