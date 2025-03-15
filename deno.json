@@ -22,5 +22,12 @@
   },
   "tasks": {
     "snapshot": "deno test -RW=. -- -u"
+  },
+  "publish": {
+    "exclude": [
+      ".github",
+      ".zed",
+      ".vscode"
+    ]
   }
 }
